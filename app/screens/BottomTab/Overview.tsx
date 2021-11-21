@@ -1,11 +1,11 @@
 import React, { useCallback, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-// import auth from '@react-native-firebase/auth';
-
+import { getAuth, signOut } from 'firebase/auth';
 import { useAlert } from 'utils';
 import { Background, StyledButton } from 'components';
 
 const Overview = () => {
+  const auth = getAuth();
   const alert = useAlert();
   const checkIfNewUser = useCallback(async () => {
     try {
@@ -23,7 +23,7 @@ const Overview = () => {
   }, [checkIfNewUser]);
 
   const handleSignOut = async () => {
-    // await auth().signOut();
+    await signOut(auth);
   };
 
   return (

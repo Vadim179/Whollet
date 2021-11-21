@@ -1,21 +1,22 @@
 import React, { useState } from 'react';
 import { Dimensions } from 'react-native';
-// import AsyncStorage from '@react-native-async-storage/async-storage';
-// import auth from '@react-native-firebase/auth';
 
 import { SignUpScreens, StackNavigationProps } from 'types';
-// import { useAlert } from 'utils';
+import { useAlert } from 'utils';
 import { validateEmailAddress, validatePassword } from 'utils/authValidation';
+
 import { Background, Box, Illustration } from 'components';
 import { Header } from 'components/Header';
 import { AuthForm } from 'components/AuthForm';
+import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
 
 const SignUp = ({ navigation }: StackNavigationProps<SignUpScreens, 'SignUp'>) => {
+  const auth = getAuth();
+  const alert = useAlert();
   const [loading, setLoading] = useState<boolean>(false);
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [showPassword, setShowPassword] = useState<boolean>(false);
-  // const alert = useAlert();
 
   const { height } = Dimensions.get('window');
 
@@ -25,24 +26,17 @@ const SignUp = ({ navigation }: StackNavigationProps<SignUpScreens, 'SignUp'>) =
 
   const handleLogin = async () => {
     setLoading(true);
-    // try {
-    //   const res = await auth().signInWithEmailAndPassword(email, password);
-    //   if (res) {
-    //     const { additionalUserInfo } = res;
-    //     if (additionalUserInfo) {
-    //       const { isNewUser } = additionalUserInfo;
-    //       await AsyncStorage.setItem('isNewUser', `${isNewUser}`);
-    //     }
-    //   }
-    // } catch (error) {
-    //   if (error.code === 'auth/user-not-found') {
-    //     setLoading(false);
-    //     alert(
-    //       'Error',
-    //       'The email and password you entered did not match our records. Please double check and try again.',
-    //     );
-    //   }
-    // }
+    try {
+      await signInWithEmailAndPassword(auth, email, password);
+    } catch (error) {
+      if (error.code === 'auth/user-not-found') {
+        setLoading(false);
+        alert(
+          'Error',
+          'The email and password you entered did not match our records. Please double check and try again.',
+        );
+      }
+    }
   };
 
   return (

@@ -1,51 +1,35 @@
-import React, {
-  // useCallback,
-  // useContext,
-  // useEffect,
-  useState,
-} from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-// import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 
-// import { AppContext, AUTH_CHECKED } from 'context';
-// import { Loading } from 'components';
+import { AppContext, AUTH_CHECKED } from 'context';
+import { Loading } from 'components';
 import { CCVPNavigator, PreAuthNavigator } from './PreAuth';
 
 const RootNavigator = () => {
-  // ! REMOVE THIS
-  const [user] = useState(null);
+  const auth = getAuth();
+  const { state, dispatch } = useContext(AppContext);
+  const [user, setUser] = useState<any | null>(null);
+  const { authLoading } = state;
 
-  // const { state, dispatch } = useContext(AppContext);
-  // const [user, setUser] = useState<FirebaseAuthTypes.User | null>(null);
-  // const { authLoading } = state;
+  const checkUser = useCallback(
+    (fbUser: any | null) => {
+      setUser(fbUser);
+      dispatch({
+        type: AUTH_CHECKED,
+      });
+    },
+    [dispatch],
+  );
 
-  // const checkUser = useCallback(
-  //   (fbUser: FirebaseAuthTypes.User | null) => {
-  //     setUser(fbUser);
-  //     dispatch({
-  //       type: AUTH_CHECKED,
-  //     });
-  //   },
-  //   [dispatch],
-  // );
+  useEffect(() => {
+    const listener = onAuthStateChanged(auth, checkUser);
+    return () => listener();
+  }, [auth, checkUser]);
 
-  // useEffect(() => {
-  //   const listener = auth().onAuthStateChanged(checkUser);
-  //   return () => {
-  //     listener();
-  //   };
-  // }, [checkUser]);
-
-  // return authLoading ? (
-  //   <Loading />
-  // ) : (
-  //   <NavigationContainer>
-  //     {user !== null ? <CCVPNavigator /> : <PreAuthNavigator />}
-  //   </NavigationContainer>
-  // );
-
-  // ! REMOVE THIS
-  return (
+  return authLoading ? (
+    <Loading />
+  ) : (
     <NavigationContainer>
       {user !== null ? <CCVPNavigator /> : <PreAuthNavigator />}
     </NavigationContainer>
