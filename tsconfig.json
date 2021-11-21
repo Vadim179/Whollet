@@ -15,7 +15,20 @@
     "isolatedModules": false,
     "resolveJsonModule": true,
     "target": "esnext",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "*": ["app/*"],
+      "@tests": ["app/tests/*"],
+      "@theme": ["app/theme"],
+      "@types": ["app/types"],
+      "@context": ["app/context"],
+      "@utils": ["app/utils"],
+      "@styles": ["app/styles"],
+      "@navigation": ["app/navigation"],
+      "@components": ["app/components"],
+      "@icons": ["app/components/assets/icons"],
+      "@screens": ["app/screens"]
+    }
   },
   "exclude": ["node_modules", "babel.config.js", "jest.config.js"]
 }
