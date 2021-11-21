@@ -1,0 +1,9 @@
+{
+  "typescript": true,
+  "native": true,
+  "svgo": true,
+  "svgProps": {
+    "width": "24",
+    "height": "24"
+  }
+}

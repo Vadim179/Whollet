@@ -1,0 +1,56 @@
+import React, {
+  // useCallback,
+  // useContext,
+  // useEffect,
+  useState,
+} from 'react';
+
+import { NavigationContainer } from '@react-navigation/native';
+// import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
+
+// import { AppContext, AUTH_CHECKED } from '../context';
+// import { Loading } from '../components';
+import { CCVPNavigator, PreAuthNavigator } from './PreAuth';
+
+const RootNavigator = () => {
+  // ! REMOVE THIS
+  const [user] = useState(null);
+
+  // const { state, dispatch } = useContext(AppContext);
+  // const [user, setUser] = useState<FirebaseAuthTypes.User | null>(null);
+  // const { authLoading } = state;
+
+  // const checkUser = useCallback(
+  //   (fbUser: FirebaseAuthTypes.User | null) => {
+  //     setUser(fbUser);
+  //     dispatch({
+  //       type: AUTH_CHECKED,
+  //     });
+  //   },
+  //   [dispatch],
+  // );
+
+  // useEffect(() => {
+  //   const listener = auth().onAuthStateChanged(checkUser);
+  //   return () => {
+  //     listener();
+  //   };
+  // }, [checkUser]);
+
+  // return authLoading ? (
+  //   <Loading />
+  // ) : (
+  //   <NavigationContainer>
+  //     {user !== null ? <CCVPNavigator /> : <PreAuthNavigator />}
+  //   </NavigationContainer>
+  // );
+
+  // ! REMOVE THIS
+  return (
+    <NavigationContainer>
+      {user !== null ? <CCVPNavigator /> : <PreAuthNavigator />}
+    </NavigationContainer>
+  );
+};
+
+export default RootNavigator;
