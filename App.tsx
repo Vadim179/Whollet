@@ -1,4 +1,5 @@
 import React from 'react';
+import './app/config/firebase';
 import { useFonts } from 'expo-font';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
