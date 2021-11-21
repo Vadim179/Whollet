@@ -8,7 +8,7 @@ import IconButton from '../IconButton';
 import PressableText from '../PressableText';
 import StyledText from '../StyledText';
 
-import NumberPadStyle from '../NumberPad/NumberPad.style';
+import NumberPadStyle from './NumberPad.style';
 
 interface INumberPadProps {
   isLogin?: boolean;
