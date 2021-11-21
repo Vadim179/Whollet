@@ -3,8 +3,8 @@ import { StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Animated, { Easing, useValue } from 'react-native-reanimated';
 
-import { AppContext, CLEAR_NOTIFICATION } from '../../context';
-import { INotification } from '../../types';
+import { AppContext, CLEAR_NOTIFICATION } from 'context';
+import { INotification } from 'types';
 
 import Box from '../Box';
 import AnimatedBox from '../AnimatedBox';

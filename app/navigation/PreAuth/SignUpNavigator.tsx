@@ -2,10 +2,10 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SignUpScreens } from '../../types';
+import { SignUpScreens } from 'types';
 
-import { Login } from '../../screens/PreAuth/LoginScreens';
-import { SignUp } from '../../screens/PreAuth/SignUp';
+import { Login } from 'screens/PreAuth/LoginScreens';
+import { SignUp } from 'screens/PreAuth/SignUp';
 
 import CCVPNavigator from './CCVPNavigator';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { capitalizedCase } from '../../utils';
+import { capitalizedCase } from 'utils';
 
 import Box from '../Box';
 import Icon from '../Icon';

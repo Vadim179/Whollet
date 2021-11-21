@@ -1,10 +1,10 @@
 import React, { useCallback, useState } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
-import { CCVPScreens, StackNavigationProps } from '../../types';
-import { useAlert } from '../../utils';
+import { CCVPScreens, StackNavigationProps } from 'types';
+import { useAlert } from 'utils';
 
-import { PinLayout } from '../../components/PinLayout';
+import { PinLayout } from 'components/PinLayout';
 
 const CreateConfirmVerifyPin = ({
   navigation,
@@ -24,7 +24,7 @@ const CreateConfirmVerifyPin = ({
       const savedPin = await AsyncStorage.getItem('pin');
       setPin(savedPin);
     } catch (error) {
-      alert('Error', error + '');
+      alert('Error', error);
     } finally {
       setLoading(false);
     }

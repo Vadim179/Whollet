@@ -2,7 +2,7 @@ import React from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 
 import { ButtonContainer } from './ButtonContainer';
 import Box from './Box';

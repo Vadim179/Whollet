@@ -3,13 +3,13 @@ import { Dimensions } from 'react-native';
 // import AsyncStorage from '@react-native-async-storage/async-storage';
 // import auth from '@react-native-firebase/auth';
 
-import { SignUpScreens, StackNavigationProps } from '../../../types';
-// import { useAlert } from '../../../utils';
-import { validateEmailAddress, validatePassword } from '../../../utils/authValidation';
+import { SignUpScreens, StackNavigationProps } from 'types';
+// import { useAlert } from 'utils';
+import { validateEmailAddress, validatePassword } from 'utils/authValidation';
 
-import { Background, Box, Illustration } from '../../../components';
-import { Header } from '../../../components/Header';
-import { AuthForm } from '../../../components/AuthForm';
+import { Background, Box, Illustration } from 'components';
+import { Header } from 'components/Header';
+import { AuthForm } from 'components/AuthForm';
 
 const SignUp = ({ navigation }: StackNavigationProps<SignUpScreens, 'SignUp'>) => {
   const [loading, setLoading] = useState<boolean>(false);
@@ -40,7 +40,6 @@ const SignUp = ({ navigation }: StackNavigationProps<SignUpScreens, 'SignUp'>) =
     //     }
     //   }
     // } catch (error) {
-    //   // @ts-ignore
     //   if (error.code === 'auth/email-already-in-use') {
     //     setLoading(false);
     //     alert('Error', 'The email address is already in use by another account.', [

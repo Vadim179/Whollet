@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
-import { BottomTabScreens } from '../../types';
-import { Overview, Portfolio, Transactions } from '../../screens/BottomTab';
+import { BottomTabScreens } from 'types';
+import { Overview, Portfolio, Transactions } from 'screens/BottomTab';
 
 const BottomTab = createBottomTabNavigator<BottomTabScreens>();
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Background, StyledText } from '../../components';
+import { Background, StyledText } from 'components';
 
 const DocumentVerification = () => {
   return (

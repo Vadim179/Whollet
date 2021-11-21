@@ -11,7 +11,7 @@ import {
   useRestyle,
 } from '@shopify/restyle';
 
-import { Theme } from '../../theme';
+import { Theme } from 'theme';
 
 import StyledPressable from '../StyledPressable';
 import Box from '../Box';

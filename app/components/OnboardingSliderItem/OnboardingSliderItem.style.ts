@@ -1,5 +1,5 @@
 import { Dimensions, StyleSheet } from 'react-native';
-import { spacing } from '../../styles';
+import { spacing } from 'styles';
 
 const { width } = Dimensions.get('window');
 

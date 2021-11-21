@@ -2,8 +2,8 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SMTYFScreens } from '../../types';
-import { Amount, ChooseRecipient, AddMessage, Confirmation } from '../../screens/SendMoneyToFriend';
+import { SMTYFScreens } from 'types';
+import { Amount, ChooseRecipient, AddMessage, Confirmation } from 'screens/SendMoneyToFriend';
 
 const SMTYFStack = createStackNavigator<SMTYFScreens>();
 

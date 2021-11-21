@@ -2,7 +2,7 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { KYCScreens } from '../../types';
+import { KYCScreens } from 'types';
 import {
   PersonalInformation,
   DocumentVerification,
@@ -10,7 +10,7 @@ import {
   ScanBackSide,
   NationalIDScan,
   Done,
-} from '../../screens/KnowYourCustomer';
+} from 'screens/KnowYourCustomer';
 
 const KYCStack = createStackNavigator<KYCScreens>();
 

@@ -1,14 +1,14 @@
 import React from 'react';
 import { Pressable } from 'react-native';
 
-import { spacing } from '../../styles';
+import { spacing } from 'styles';
 
 import Box from '../Box';
 import IconButton from '../IconButton';
 import PressableText from '../PressableText';
 import StyledText from '../StyledText';
 
-import NumberPadStyle from './NumberPad.style';
+import NumberPadStyle from '../NumberPad/NumberPad.style';
 
 interface INumberPadProps {
   isLogin?: boolean;

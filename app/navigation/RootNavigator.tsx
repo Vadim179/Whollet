@@ -4,12 +4,11 @@ import React, {
   // useEffect,
   useState,
 } from 'react';
-
 import { NavigationContainer } from '@react-navigation/native';
 // import auth, { FirebaseAuthTypes } from '@react-native-firebase/auth';
 
-// import { AppContext, AUTH_CHECKED } from '../context';
-// import { Loading } from '../components';
+// import { AppContext, AUTH_CHECKED } from 'context';
+// import { Loading } from 'components';
 import { CCVPNavigator, PreAuthNavigator } from './PreAuth';
 
 const RootNavigator = () => {

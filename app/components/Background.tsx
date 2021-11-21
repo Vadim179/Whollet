@@ -3,8 +3,8 @@ import { StatusBar } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useTheme } from '@shopify/restyle';
 
-import { Theme } from '../theme';
-import { AppContext } from '../context';
+import { Theme } from 'theme';
+import { AppContext } from 'context';
 
 import Box from './Box';
 

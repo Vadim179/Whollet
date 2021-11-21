@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCountryName } from '../../utils';
+import { getCountryName } from 'utils';
 
 import Box from '../Box';
 import { ButtonContainer } from '../ButtonContainer';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { getCoinSymbol } from '../utils';
+import { getCoinSymbol } from 'utils';
 
 import Box from './Box';
 import StyledText from './StyledText';

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { capitalizedCase, getTransactionStatusColor } from '../../utils';
+import { capitalizedCase, getTransactionStatusColor } from 'utils';
 
 import Box from '../Box';
 import Icon from '../Icon';

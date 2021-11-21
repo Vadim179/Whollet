@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 
-import { capitalizedCase, getCoinSymbol } from '../../utils';
+import { capitalizedCase, getCoinSymbol } from 'utils';
 
 import Box from '../Box';
 import Icon from '../Icon';

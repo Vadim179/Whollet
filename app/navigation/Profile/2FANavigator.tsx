@@ -2,8 +2,8 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { TFAScreens } from '../../types';
-import { TFA, Confirmation } from '../../screens/Profile/SecurityScreens/2FAScreens';
+import { TFAScreens } from 'types';
+import { TFA, Confirmation } from 'screens/Profile/SecurityScreens/2FAScreens';
 
 const TFAStack = createStackNavigator<TFAScreens>();
 

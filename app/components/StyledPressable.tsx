@@ -14,7 +14,7 @@ import {
   opacity,
 } from '@shopify/restyle';
 
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 
 const restyleFunctions = [layout, spacing, border, backgroundColor, opacity];
 

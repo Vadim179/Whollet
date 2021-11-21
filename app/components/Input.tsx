@@ -14,7 +14,7 @@ import {
   layout,
 } from '@shopify/restyle';
 
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 
 const restyleFunctions = [layout, spacing, border, color, typography];
 type InputProps = SpacingProps<Theme> &

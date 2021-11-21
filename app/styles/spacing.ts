@@ -1,4 +1,4 @@
-import { scaleSpacing } from '../utils';
+import { scaleSpacing } from 'utils';
 
 const spacing = {
   sH: scaleSpacing(8, 'horizontal'),

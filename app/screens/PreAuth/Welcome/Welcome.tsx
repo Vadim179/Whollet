@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { PreAuthScreens, StackNavigationProps } from '../../../types';
-import { Background, Box, Illustration, StyledText } from '../../../components';
-import { BottomSection } from '../../../components/BottomSection';
+import { PreAuthScreens, StackNavigationProps } from 'types';
+import { Background, Box, Illustration, StyledText } from 'components';
+import { BottomSection } from 'components/BottomSection';
 
 import WelcomeStyle from './Welcome.style';
 

@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react';
-import { INotification } from '../types';
+import { INotification } from 'types';
 
 export const AUTH_CHECKED = 'AUTH_CHECKED';
 export const ENABLE_DARK_MODE = 'ENABLE_DARK_MODE';

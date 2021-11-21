@@ -11,7 +11,6 @@ interface IStyledInputProps {
   value: string;
   disabled?: boolean;
   infoText?: string;
-  ariaLabel?: string;
   errorText?: string;
   keyboardType?: 'default' | 'email-address' | 'phone-pad' | 'numeric';
   isPassword?: boolean;

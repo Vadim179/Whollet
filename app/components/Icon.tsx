@@ -1,8 +1,8 @@
 import { color, ColorProps, useRestyle } from '@shopify/restyle';
 import React from 'react';
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 
-import { IconName } from '../types';
+import { IconName } from 'types';
 
 import * as Icons from './assets/icons';
 
@@ -19,7 +19,7 @@ const Icon: React.FC<IIconProps> = ({ name, ...rest }) => {
       return <Icons.Afghanistan {...props} />;
     case IconName.albania:
       return <Icons.Albania {...props} />;
-    case IconName.alighRight:
+    case IconName.alignRight:
       return <Icons.AlignRight {...props} />;
     case IconName.angola:
       return <Icons.Angola {...props} />;

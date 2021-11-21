@@ -2,8 +2,8 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { ProfileScreens } from '../../types';
-import { Overview, ChooseCurrency, PersonalInformation } from '../../screens/Profile';
+import { ProfileScreens } from 'types';
+import { Overview, ChooseCurrency, PersonalInformation } from 'screens/Profile';
 import SecurityNavigator from './SecurityNavigator';
 import PNVNavigator from './PNVNavigator';
 

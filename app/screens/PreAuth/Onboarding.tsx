@@ -1,9 +1,9 @@
 import React from 'react';
 import { Dimensions } from 'react-native';
 
-import { PreAuthScreens, StackNavigationProps } from '../../types';
-import { Background, OnboardingSlider } from '../../components';
-import { ContentContainer } from '../../components/ContentContainer';
+import { PreAuthScreens, StackNavigationProps } from 'types';
+import { Background, OnboardingSlider } from 'components';
+import { ContentContainer } from 'components/ContentContainer';
 
 const Onboarding = ({ navigation }: StackNavigationProps<PreAuthScreens, 'Onboarding'>) => {
   const { height } = Dimensions.get('window');

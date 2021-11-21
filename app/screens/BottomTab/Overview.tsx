@@ -2,8 +2,8 @@ import React, { useCallback, useEffect } from 'react';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 // import auth from '@react-native-firebase/auth';
 
-import { useAlert } from '../../utils';
-import { Background, StyledButton } from '../../components';
+import { useAlert } from 'utils';
+import { Background, StyledButton } from 'components';
 
 const Overview = () => {
   const alert = useAlert();

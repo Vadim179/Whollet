@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { IllustrationName } from '../types';
+import { IllustrationName } from 'types';
 import * as Illustrations from './assets/illustrations';
 
 interface IIllustrationProps {

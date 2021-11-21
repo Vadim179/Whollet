@@ -2,13 +2,13 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { PNVScreens } from '../../types';
+import { PNVScreens } from 'types';
 import {
   EnterPhoneNumber,
   ChooseDialingCode,
   VerifyCode,
   Done,
-} from '../../screens/Profile/PhoneNumberVerification';
+} from 'screens/Profile/PhoneNumberVerification';
 
 const PNVStack = createStackNavigator<PNVScreens>();
 

@@ -1,4 +1,4 @@
-import { Country } from '../types';
+import { Country } from 'types';
 
 const getCountryName = (name: string) => {
   switch (name) {

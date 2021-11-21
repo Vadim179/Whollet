@@ -1,4 +1,4 @@
-import { Coin } from '../types';
+import { Coin } from 'types';
 
 const getCoinSymbol = (coin: string) => {
   switch (coin) {

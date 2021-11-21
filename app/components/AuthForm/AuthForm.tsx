@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Dimensions, View } from 'react-native';
 import { Easing, timing, useValue } from 'react-native-reanimated';
 
-import { useKeyboardDidShow } from '../../utils';
+import { useKeyboardDidShow } from 'utils';
 
 import { ContentContainer } from '../ContentContainer';
 import { BottomSection } from '../BottomSection';
@@ -64,15 +64,9 @@ const AuthForm: React.FC<IAuthFormProps> = ({
 
   useEffect(() => {
     if (keyboardDidShow) {
-      timing(containerInitialHeight, {
-        ...containerAnimConfig,
-        toValue: FOCUSED_HEIGHT,
-      }).start();
+      timing(containerInitialHeight, { ...containerAnimConfig, toValue: FOCUSED_HEIGHT }).start();
     } else {
-      timing(containerInitialHeight, {
-        ...containerAnimConfig,
-        toValue: UNFOCUSED_HEIGHT,
-      }).start();
+      timing(containerInitialHeight, { ...containerAnimConfig, toValue: UNFOCUSED_HEIGHT }).start();
     }
   }, [
     FOCUSED_HEIGHT,

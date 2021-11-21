@@ -2,8 +2,8 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { WithdrawalScreens } from '../../types';
-import { Amount, EnterAddress, ScanQRCode, Confirmation } from '../../screens/Withdrawal';
+import { WithdrawalScreens } from 'types';
+import { Amount, EnterAddress, ScanQRCode, Confirmation } from 'screens/Withdrawal';
 
 const WithdrawalStack = createStackNavigator<WithdrawalScreens>();
 

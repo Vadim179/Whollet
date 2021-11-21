@@ -2,14 +2,14 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { WalletScreens } from '../../types';
+import { WalletScreens } from 'types';
 import {
   Overview,
   CoinDetails,
   AllAssets,
   AllTransactions,
   TransactionDetails,
-} from '../../screens/Wallet';
+} from 'screens/Wallet';
 
 const WalletStack = createStackNavigator<WalletScreens>();
 

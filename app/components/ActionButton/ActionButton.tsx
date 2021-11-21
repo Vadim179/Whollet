@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from 'react-native';
 import { useTheme } from '@shopify/restyle';
 
-import { Theme } from '../../theme';
+import { Theme } from 'theme';
 
 import { ButtonContainer } from '../ButtonContainer';
 import StyledText from '../StyledText';

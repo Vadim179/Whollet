@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
 import { TextInput } from 'react-native';
 
-import { Background, Box, Indicator } from '..';
-import { Header } from '../Header';
-import { NumberPad } from '../NumberPad';
+import { Background, Box, Indicator } from 'components';
+import { Header } from 'components/Header';
+import { NumberPad } from 'components/NumberPad';
 
 import PinLayoutStyle from './PinLayout.style';
-import Loading from '../Loading';
+import Loading from 'components/Loading';
 
 type IPinLayout = {
   pinEntry: string;

@@ -2,8 +2,8 @@ import React from 'react';
 
 import { createStackNavigator } from '@react-navigation/stack';
 
-import { SecurityScreens } from '../../types';
-import { Security, ChangePassword, ChangePin, NewPin } from '../../screens/Profile/SecurityScreens';
+import { SecurityScreens } from 'types';
+import { Security, ChangePassword, ChangePin, NewPin } from 'screens/Profile/SecurityScreens';
 import TFANavigator from './2FANavigator';
 
 const SecurityStack = createStackNavigator<SecurityScreens>();

@@ -9,7 +9,7 @@ import {
   VariantProps,
 } from '@shopify/restyle';
 
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 import StyledText from './StyledText';
 
 type IPressableTextProps = {

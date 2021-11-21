@@ -1,7 +1,7 @@
 import React from 'react';
 import { spacing, SpacingProps, useRestyle } from '@shopify/restyle';
 
-import { Theme } from '../theme';
+import { Theme } from 'theme';
 
 import Box from './Box';
 
